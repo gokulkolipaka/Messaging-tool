@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+.env
+*.db
+*.log
+
+# Uploads
+uploads/files/*
+uploads/logos/*
+!uploads/logos/default-logo.png

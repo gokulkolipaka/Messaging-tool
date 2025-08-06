@@ -1,5 +1,5 @@
 // Authentication module
-const API_BASE = 'https://your-render-app.onrender.com/api';
+const API_BASE = 'https://messaging-tool.onrender.com/api';
 
 async function login() {
     const phone = document.getElementById('phoneNumber').value;

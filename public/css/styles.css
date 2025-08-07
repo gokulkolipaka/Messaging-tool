@@ -1,0 +1,18 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { height: 100vh; display: flex; }
+.screen { display: none; width: 100%; height: 100%; align-items: center; justify-content: center; }
+.screen.active { display: flex; }
+#loginForm { display: flex; flex-direction: column; gap: 10px; width: 300px; }
+#loginForm img { width: 170px; height: 66px; object-fit: contain; }
+header { display: flex; justify-content: space-between; padding: 10px; background: #075e54; color: #fff; }
+.main { display: flex; flex: 1; }
+aside { width: 300px; border-right: 1px solid #ddd; overflow-y: auto; }
+section { flex: 1; display: flex; flex-direction: column; }
+#messages { flex: 1; padding: 10px; overflow-y: auto; background: #ece5dd; }
+.message { max-width: 70%; margin: 5px 0; padding: 8px 12px; border-radius: 7px; }
+.message.sent { background: #dcf8c6; align-self: flex-end; }
+.message.received { background: #fff; align-self: flex-start; }
+#inputBar { display: flex; padding: 5px; border-top: 1px solid #ddd; }
+#msgInput { flex: 1; padding: 8px; border-radius: 20px; border: none; }
+button { margin-left: 5px; padding: 8px 12px; border: none; border-radius: 50%; background: #25d366; color: #fff; cursor: pointer; }
+#adminScreen { padding: 20px; display: flex; flex-direction: column; gap: 10px; }

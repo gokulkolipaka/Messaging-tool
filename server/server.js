@@ -111,13 +111,10 @@ const authenticateToken = (req, res, next) => {
     });
 };
 
-// Check intranet access
+// Replace this function
 const checkIntranet = (req) => {
-    // Check if request is from company intranet
-    const clientIP = req.ip || req.connection.remoteAddress;
-    // Add your company IP ranges here
-    const companyRanges = ['192.168.', '10.0.', '172.16.'];
-    return companyRanges.some(range => clientIP.startsWith(range));
+  // return true for everyone (demo / cloud mode)
+  return true;
 };
 
 // API Routes
